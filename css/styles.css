@@ -1,0 +1,105 @@
+body {
+  background-color: #e5e5e5;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+/* логотип */
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+}
+.logo-text {
+  color: #000;
+}
+
+/* навигация и контакты */
+.nav-list-item {
+  font-family: 'Roboto', sans-serif;
+  font-weight: medium;
+  font-size: 14px;
+  color: #212121;
+}
+.nav-list-item:focus,
+.nav-list-item:hover,
+.contacts-list-item:focus,
+.contacts-list-item:hover,
+.address-list-item:focus,
+.address-list-item:hover {
+  color: #2196f3;
+}
+.contacts-list {
+  font-family: 'Roboto', sans-serif;
+  font-weight: medium;
+  font-size: 14px;
+  color: #757575;
+}
+
+/* герой */
+.title-hero {
+  font-family: 'Roboto', sans-serif;
+  font-weight: black;
+  font-size: 44px;
+  color: #fff;
+}
+.button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff;
+  background-color: #2196f3;
+}
+/* Наши преимущества */
+.list-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: #212121;
+}
+.list-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: regular;
+  font-size: 14px;
+  color: #757575;
+}
+
+/* Чем мы занимаемся */
+.section-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  color: #212121;
+}
+.section-list-item {
+  background-color: #fff;
+}
+
+.section-list-item-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: medium;
+  font-size: 16px;
+  color: #212121;
+}
+.section-list-item-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: regular;
+  font-size: 16px;
+  color: #757575;
+}
+
+/* подвал */
+
+.footer {
+  background-color: #2f303a;
+}
+.address-list-item {
+  font-family: 'Roboto', sans-serif;
+  font-weight: regular;
+  font-size: 14px;
+  color: #fff;
+}
