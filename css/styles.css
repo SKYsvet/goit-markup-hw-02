@@ -1,7 +1,15 @@
+:root {
+  --weight-title: 700;
+  --color-title: #212121;
+  --size-section-title: 36px;
+}
+
 body {
-  background-color: #e5e5e5;
-  font-family: 'Raleway', sans-serif;
   font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #757575;
+  line-height: auto;
 }
 
 ul {
@@ -11,8 +19,9 @@ ul {
 /* логотип */
 .logo {
   font-family: 'Raleway', sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
+  color: #2196f3;
 }
 .logo-text {
   color: #000;
@@ -20,9 +29,7 @@ ul {
 
 /* навигация и контакты */
 .nav-list-item {
-  font-family: 'Roboto', sans-serif;
-  font-weight: medium;
-  font-size: 14px;
+  font-weight: 500;
   color: #212121;
 }
 .nav-list-item:focus,
@@ -34,72 +41,107 @@ ul {
   color: #2196f3;
 }
 .contacts-list {
-  font-family: 'Roboto', sans-serif;
-  font-weight: medium;
-  font-size: 14px;
+  font-weight: 500;
+}
+
+.contacts-list-item {
   color: #757575;
 }
 
 /* герой */
+
+.hero,
+.footer {
+  background-color: #2f303a;
+}
+
 .title-hero {
-  font-family: 'Roboto', sans-serif;
-  font-weight: black;
+  font-weight: 900;
   font-size: 44px;
   color: #fff;
+  line-height: 1.36;
 }
+
 .button {
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   color: #fff;
+  line-height: 1.875;
   background-color: #2196f3;
 }
 /* Наши преимущества */
 .list-title {
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  font-size: 14px;
-  color: #212121;
+  font-weight: var(--weight-title);
+  color: var(--color-title);
 }
 .list-text {
-  font-family: 'Roboto', sans-serif;
-  font-weight: regular;
-  font-size: 14px;
-  color: #757575;
+  line-height: 1.7;
 }
 
 /* Чем мы занимаемся */
+
 .section-title {
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  font-size: 36px;
-  color: #212121;
+  font-weight: var(--weight-title);
+  font-size: var(--size-section-title);
+  color: var(--color-title);
 }
-.section-list-item {
-  background-color: #fff;
+
+/* Наша команда */
+
+.section-title {
+  font-weight: var(--weight-title);
+  font-size: var(--size-section-title);
+  color: var(--color-title);
 }
 
 .section-list-item-title {
-  font-family: 'Roboto', sans-serif;
-  font-weight: medium;
+  font-weight: 500;
   font-size: 16px;
   color: #212121;
 }
 .section-list-item-text {
-  font-family: 'Roboto', sans-serif;
-  font-weight: regular;
   font-size: 16px;
-  color: #757575;
 }
 
 /* подвал */
 
-.footer {
-  background-color: #2f303a;
-}
 .address-list-item {
-  font-family: 'Roboto', sans-serif;
-  font-weight: regular;
-  font-size: 14px;
   color: #fff;
+  line-height: 1.7;
+}
+
+/* Портфолио */
+/* Кнопки */
+:root {
+  --wight-btn: 500;
+  --size-btn: 16px;
+  --background-btn: #f5f4fa;
+  --size-img-title: 18px;
+  --line-height-img-title: 2;
+}
+
+.list-button-item {
+  font-weight: var(--wight-btn);
+  font-size: var(--size-btn);
+  line-height: 1.625;
+  color: var(--color-title);
+}
+.list-button-item:hover,
+.list-button-item:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+
+/* Карточки */
+
+.list-img-title {
+  font-weight: var(--weight-title);
+  font-size: var(--size-img-title);
+  line-height: var(--line-height-img-title);
+  color: var(--color-title);
+}
+
+.list-img-text {
+  font-size: 16px;
+  line-height: 1.875;
 }
