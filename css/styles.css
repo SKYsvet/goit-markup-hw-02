@@ -2,6 +2,7 @@
   --weight-title: 700;
   --color-title: #212121;
   --size-section-title: 36px;
+  --color-link: #2196f3
 }
 
 body {
@@ -9,10 +10,11 @@ body {
   font-weight: 400;
   font-size: 14px;
   color: #757575;
-  line-height: auto;
+  line-height: 1.2;
+  font-style: normal;
 }
 
-ul {
+.list {
   list-style: none;
 }
 
@@ -21,16 +23,23 @@ ul {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
-  color: #2196f3;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--color-link);
+  text-decoration: none;
 }
 .logo-text {
-  color: #000;
+  color: #000000;
 }
 
 /* навигация и контакты */
+
 .nav-list-item {
   font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   color: #212121;
+  text-decoration: none;
 }
 .nav-list-item:focus,
 .nav-list-item:hover,
@@ -38,14 +47,18 @@ ul {
 .contacts-list-item:hover,
 .address-list-item:focus,
 .address-list-item:hover {
-  color: #2196f3;
+  color: var(--color-link);
 }
 .contacts-list {
-  font-weight: 500;
+  
 }
 
 .contacts-list-item {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   color: #757575;
+  text-decoration: none; 
 }
 
 /* герой */
@@ -58,24 +71,51 @@ ul {
 .title-hero {
   font-weight: 900;
   font-size: 44px;
-  color: #fff;
   line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .button {
   font-weight: 700;
   font-size: 16px;
-  color: #fff;
-  line-height: 1.875;
-  background-color: #2196f3;
+  color: #ffffff;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: var(--color-link);
+  cursor: pointer;
 }
+
 /* Наши преимущества */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .list-title {
   font-weight: var(--weight-title);
+  font-size: 14px;
+  color: var(--color-title);
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: var(--color-title);
 }
 .list-text {
-  line-height: 1.7;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 /* Чем мы занимаемся */
@@ -83,31 +123,39 @@ ul {
 .section-title {
   font-weight: var(--weight-title);
   font-size: var(--size-section-title);
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
   color: var(--color-title);
 }
 
 /* Наша команда */
 
-.section-title {
-  font-weight: var(--weight-title);
-  font-size: var(--size-section-title);
-  color: var(--color-title);
-}
+.section {background-color: #f5f4fa;}
 
 .section-list-item-title {
   font-weight: 500;
   font-size: 16px;
-  color: #212121;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--color-title);
 }
 .section-list-item-text {
   font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 /* подвал */
 
+.logo-text-footer {color: #ffffff;}
+
 .address-list-item {
-  color: #fff;
-  line-height: 1.7;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff; 
+  text-decoration: none;
 }
 
 /* Портфолио */
@@ -120,28 +168,43 @@ ul {
   --line-height-img-title: 2;
 }
 
+
+.nav-list .link.current {color: var(--color-link);}
+}
+
+.list-button {
+   }
 .list-button-item {
+  font-family: 'Roboto', sans-serif;
   font-weight: var(--wight-btn);
   font-size: var(--size-btn);
-  line-height: 1.625;
-  color: var(--color-title);
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  cursor: pointer;
 }
+
 .list-button-item:hover,
 .list-button-item:focus {
-  background-color: #2196f3;
+  background-color: var(--color-link);
   color: #ffffff;
 }
 
 /* Карточки */
 
+.img-link {text-decoration: none;}
+
 .list-img-title {
   font-weight: var(--weight-title);
   font-size: var(--size-img-title);
   line-height: var(--line-height-img-title);
+  letter-spacing: 0.06em;
   color: var(--color-title);
 }
 
 .list-img-text {
   font-size: 16px;
-  line-height: 1.875;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
 }
