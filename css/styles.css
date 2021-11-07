@@ -2,16 +2,20 @@
   --weight-title: 700;
   --color-title: #212121;
   --size-section-title: 36px;
-  --color-link: #2196f3
+  --color-accent: #2196f3;
+  --color-text: #757575;
+  --color-text-second: #ffffff;
+  --wight-btn: 500;
+  --size-btn: 16px;
+  --background-btn: #f5f4fa;
+  --size-img-title: 18px;
+  --line-height-img-title: 2;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
   font-size: 14px;
-  color: #757575;
-  line-height: 1.2;
-  font-style: normal;
+  line-height: 1.71;
 }
 
 .list {
@@ -25,7 +29,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--color-link);
+  color: var(--color-accent);
   text-decoration: none;
 }
 .logo-text {
@@ -34,58 +38,55 @@ body {
 
 /* навигация и контакты */
 
-.nav-list-item {
+.nav-link {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
   text-decoration: none;
 }
-.nav-list-item:focus,
-.nav-list-item:hover,
-.contacts-list-item:focus,
-.contacts-list-item:hover,
-.address-list-item:focus,
-.address-list-item:hover {
-  color: var(--color-link);
+
+.nav-link:focus,
+.nav-link:hover,
+.contacts-link:focus,
+.contacts-link:hover {
+  color: var(--color-accent);
 }
 .contacts-list {
-  
 }
 
-.contacts-list-item {
+.contacts-link {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
-  text-decoration: none; 
+  color: var(--color-text);
+  text-decoration: none;
 }
 
 /* герой */
 
-.hero,
-.footer {
+.hero {
   background-color: #2f303a;
+  text-align: center;
 }
 
 .title-hero {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--color-text-second);
 }
 
-.button {
+.button-hero {
   font-weight: 700;
-  font-size: 16px;
-  color: #ffffff;
+  font-size: var(--size-btn);
+  color: var(--color-text-second);
   line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
-  background-color: var(--color-link);
+  background-color: var(--color-accent);
   cursor: pointer;
 }
 
@@ -104,17 +105,14 @@ body {
   overflow: hidden;
 }
 
-.list-title {
+.advantage-title {
   font-weight: var(--weight-title);
-  font-size: 14px;
-  color: var(--color-title);
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-title);
 }
-.list-text {
-  line-height: 1.71;
+.advantage-text {
   letter-spacing: 0.03em;
 }
 
@@ -131,16 +129,18 @@ body {
 
 /* Наша команда */
 
-.section {background-color: #f5f4fa;}
+.section {
+  background-color: #f5f4fa;
+}
 
-.section-list-item-title {
+.cards-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--color-title);
 }
-.section-list-item-text {
+.cards-text {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -148,34 +148,38 @@ body {
 
 /* подвал */
 
-.logo-text-footer {color: #ffffff;}
+.footer {
+  background-color: #2f303a;
+}
 
-.address-list-item {
+.logo-text-footer {
+  color: var(--color-text-second);
+}
+
+.address-link {
   font-style: normal;
-  line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff; 
   text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address-href {
+  color: var(--color-text-second);
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: var(--color-accent);
 }
 
 /* Портфолио */
 /* Кнопки */
-:root {
-  --wight-btn: 500;
-  --size-btn: 16px;
-  --background-btn: #f5f4fa;
-  --size-img-title: 18px;
-  --line-height-img-title: 2;
+
+.nav-list .link.current {
+  color: var(--color-accent);
 }
 
-
-.nav-list .link.current {color: var(--color-link);}
-}
-
-.list-button {
-   }
-.list-button-item {
-  font-family: 'Roboto', sans-serif;
+.button-item {
   font-weight: var(--wight-btn);
   font-size: var(--size-btn);
   line-height: 1.63;
@@ -185,17 +189,19 @@ body {
   cursor: pointer;
 }
 
-.list-button-item:hover,
-.list-button-item:focus {
+.button-item:hover,
+.button-item:focus {
   background-color: var(--color-link);
-  color: #ffffff;
+  color: var(--color-text-second);
 }
 
 /* Карточки */
 
-.img-link {text-decoration: none;}
+.img-link {
+  text-decoration: none;
+}
 
-.list-img-title {
+.item-img-title {
   font-weight: var(--weight-title);
   font-size: var(--size-img-title);
   line-height: var(--line-height-img-title);
@@ -203,8 +209,9 @@ body {
   color: var(--color-title);
 }
 
-.list-img-text {
+.item-img-text {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+  color: var(--color-text);
 }
